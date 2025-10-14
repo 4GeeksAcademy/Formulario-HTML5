@@ -11,14 +11,13 @@
 </head>
 
 <body>
-    <form class="row g-3 was-validated">
-        <div class="col-8 mx-auto border row g-3">
-            <nav class="navbar bg-body-tertiary">
+    <form class="row g-3 was-validated col-8 mx-auto border row g-3">
+            <nav class="navbar bg-body-tertiary border">
                 <div class="container-fluid">
                     <span class="navbar-brand mb-0 h1">Payment For Example</span>
                 </div>
             </nav>
-
+            <input class="form-control bg-danger" id="disabledInput" type="text" placeholder="Some fields are missing" disabled>
             <div class="col-md-5">
                 <label for="validationCustom01" class="form-label">Card #</label>
                 <input type="text" class="form-control" placeholder="XXXXXXXXXXXX" aria-label="Username"
@@ -109,13 +108,18 @@
                 <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <div class="col-12 form-check-reverse border bg-body-tertiary">
-                <button class="btn btn-secondary m-2" type="submit">Cancel</button>
-                <button class="btn btn-primary" type="submit">Submit form</button>
+
+
+            <div class="card-footer text-body-secondary border">
+                <div class="col-12 form-check-reverse bg-body-tertiary">
+                    <button class="btn btn-secondary m-2" type="submit">Cancel</button>
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
             </div>
-        </div>
+        
     </form>
-    
+
+
 </body>
 
 
