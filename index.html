@@ -12,13 +12,16 @@
 
 <body>
     <form class="row g-3 was-validated col-8 mx-auto border row g-3">
-        <nav class="navbar bg-body-tertiary border">
+        <!-- Barra Superior -->
+        <nav class="navbar bg-body-tertiary border"> 
             <div class="container-fluid">
                 <span class="navbar-brand mb-0 h1">Payment For Example</span>
             </div>
         </nav>
+        <!-- Imput de Falta de Pago -->
         <input class="form-control bg-danger" id="disabledInput" type="text" placeholder="Some fields are missing"
             disabled>
+            <!-- Datos de Tarjeta -->
         <div class="col-md-5">
             <label for="validationCustom01" class="form-label">Card #</label>
             <input type="text" class="form-control" placeholder="XXXXXXXXXXXX" aria-label="Username"
@@ -27,7 +30,6 @@
                 Looks good!
             </div>
         </div>
-
         <div class="col-md-3">
             <label for="validationCustom01" class="form-label">CVC #</label>
             <input type="text" class="form-control" placeholder="0000" aria-label="Username"
@@ -36,7 +38,6 @@
                 Looks good!
             </div>
         </div>
-
         <div class="col-md-4">
             <label for="validationCustom01" class="form-label">Amount</label>
             <input type="text" class="form-control" placeholder="Amount" aria-label="Username"
@@ -45,7 +46,7 @@
                 Looks good!
             </div>
         </div>
-
+        <!-- Datos Personales (Nombre, Apellido, Ciudad...) -->
         <div class="col-md-6">
             <label for="validationCustom01" class="form-label">First name</label>
             <input type="text" class="form-control" id="validationCustom01" value="" required>
@@ -60,7 +61,6 @@
                 Looks good!
             </div>
         </div>
-
         <div class="col-md-6">
             <label for="validationCustom03" class="form-label">City</label>
             <input type="text" class="form-control" id="validationCustom03" required>
@@ -85,48 +85,48 @@
                 Please provide a valid zip.
             </div>
         </div>
+        <!-- Métodos de Pago (Tarjetas) -->
         <div class="col-md-auto">
             <label for="validationCustom03" class="form-label">We Accept:</label>
             <div class="d-flex bg-secondary p me-3 col-auto">
                 <div class="d-flex p m-1 margin-auto">
-                    <input class="form-check-input p me-1" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                    <input class="form-check-input p me-1" type="radio" 
+                    name="radioNoLabel" id="radioNoLabel1" value=""
                         aria-label="...">
                     <i class="bi bi-credit-card" style="color: aliceblue;"></i>
                 </div>
                 <div class="d-flex p m-1">
-                    <input class="form-check-input p me-1" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                    <input class="form-check-input p me-1" type="radio" 
+                    name="radioNoLabel" id="radioNoLabel1" value=""
                         aria-label="...">
                     <i class="bi bi-credit-card" style="color: aliceblue;"></i>
                 </div>
                 <div class="d-flex p m-1">
-                    <input class="form-check-input p me-1" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                    <input class="form-check-input p me-1" type="radio" 
+                    name="radioNoLabel" id="radioNoLabel1" value=""
                         aria-label="...">
                     <i class="bi bi-credit-card" style="color: aliceblue;"></i>
                 </div>
                 <div class="d-flex p m-1">
-                    <input class="form-check-input p me-1" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                    <input class="form-check-input p me-1" type="radio" 
+                    name="radioNoLabel" id="radioNoLabel1" value=""
                         aria-label="...">
                     <i class="bi bi-credit-card" style="color: aliceblue;"></i>
                 </div>
             </div>
         </div>
+        <!-- Mensaje Al Proveedor -->
         <div class="mb-3 col-md-5 ms-auto">
             <label for="exampleFormControlTextarea1" class="form-label">Message</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-
-
+        <!-- Botones de Compra -->
         <div class="card-footer text-body-secondary border">
             <div class="col-12 form-check-reverse bg-body-tertiary">
                 <button class="btn btn-secondary m-2" type="submit">Cancel</button>
                 <button class="btn btn-primary" type="submit">Submit form</button>
             </div>
         </div>
-
     </form>
-
-
 </body>
-
-
 </html>
